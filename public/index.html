@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="jetbrains" ng-controller="AppCtrl as app">
+
+<ul>
+    <li ng-repeat="product in app.products">
+        {{product.name}}
+    </li>
+</ul>
+
+<input type="text" ng-model="app.newProduct"/>
+<button ng-click="app.saveProduct(app.newProduct)">Save Product</button>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
