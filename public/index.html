@@ -1,19 +1,27 @@
+<!-- Markup code for the website  -->
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
 </head>
+
+<!-- Establishes the app as being called jetbrains and using AppCtrl as the controller-->
 <body ng-app="jetbrains" ng-controller="AppCtrl as app">
 
 <ul>
+    <!-- Creates a repeatable list of products -->
     <li ng-repeat="product in app.products">
         {{product.name}}
     </li>
 </ul>
 
+<!-- Creates the button that upon being clicked adds new products to the db -->
 <input type="text" ng-model="app.newProduct"/>
-<button ng-click="app.saveProduct(app.newProduct)">Save Product</button>
+<input type="text" ng-model="app.newProductAuthor"/>
+
+<!-- This in particular connects the button click with the angular function of saving (app.newProduct as param) -->
+<button ng-click="app.saveProduct(app.newProduct, app.newProductAuthor)">Save Product</button>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="app.js"></script>

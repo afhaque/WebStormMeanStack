@@ -1,0 +1,32 @@
+{
+  "name": "WebStormMeanStack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "cors": "^2.5.3",
+    "mongoose": "^4.0.1",
+    "require": "^2.4.17",
+    "requirejs": "^2.1.17"
+  },
+  "devDependencies": {
+    "body-parser": "^1.12.2",
+    "cors": "^2.5.3",
+    "express": "^4.12.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afhaque/WebStormMeanStack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afhaque/WebStormMeanStack/issues"
+  },
+  "homepage": "https://github.com/afhaque/WebStormMeanStack"
+}
